@@ -1,0 +1,18 @@
+{
+  "valid": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "gender": "Male",
+    "skills": [
+      {
+        "name": "Node.js",
+        "proficiency": "Advanced"
+      }
+    ]
+  },
+  "schemaError": {
+    "firstNames": "John",
+    "lastName": "Doe",
+    "gender": "Male"
+  }
+}

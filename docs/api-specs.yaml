@@ -1,0 +1,31 @@
+openapi: 3.0.3
+info:
+  title: Express API for User Profile
+  version: 1.0.0
+  description: >-
+    Simple boilerplate code base for creating APIs with `Node.js Express`
+    framework using `Sequelize` with `PostgreSQL` database.
+servers:
+  - url: http://localhost:3000
+    description: Development server
+paths:
+  /v1/users:
+    post:
+      tags:
+        - v1
+      description: Endpoint to create/add new user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateUserRequest'
+      responses:
+        '200':
+          description: Application helath details.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateUserSuccess'
+components: {}
+tags: []
